@@ -2,7 +2,19 @@ import { useEffect, useState } from "react"
 import Image from "next/image";
 
 export default function Columns() {
-    const [Data, setData] = useState<any[]>();
+    const [Data, setData] = useState<
+        Array<
+            {
+                id: string,
+                symbol: string,
+                name: string,
+                image: string,
+                market_cap: Number,
+                total_volume: Number
+            }
+        >
+    >
+    ();
     const listed = [
         'eth',
         'btc',
@@ -51,6 +63,9 @@ export default function Columns() {
                     return (<tr key={coin.id}>
                         <td>
                             <Image
+                                alt={
+                                    'image for' + coin.symbol
+                                }
                                 src={coin.image}
                                 width={25}
                                 height={25} />
