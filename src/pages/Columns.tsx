@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import Image from "next/image";
 
 export default function Columns() {
-    const [Data, setData] = useState([]);
+    const [Data, setData] = useState<any[]>();
     const listed = [
         'eth',
         'btc',
