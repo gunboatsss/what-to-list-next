@@ -8,7 +8,18 @@ const nextConfig = {
         hostname: 'assets.coingecko.com'
       }
     ]
-  }
+  },
+  headers
 }
-
+async function headers() {
+  return [{
+    source: '/',
+    headers: [
+      {
+        key: 'Access-Control-Allow-Origin',
+        value: 'https://api.coingecko.com'
+      }
+    ]
+  }]
+}
 module.exports = nextConfig
