@@ -11,6 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Table />
+      <p>Powered by Coingecko</p>
     </>
   )
 }

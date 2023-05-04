@@ -13,3 +13,7 @@ td {
   border: 1px solid;
   border-spacing: 0;
 }
+p {
+  text-align: center;
+  margin: auto;
+}

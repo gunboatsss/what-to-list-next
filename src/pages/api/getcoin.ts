@@ -9,6 +9,9 @@ export default function handler(
     ).then(
         data => data.json()
     ).then(
-        data => res.status(200).send(data)
+        data => {
+            res.status(200).send(data)
+            res.end();
+        }
     )
 }
