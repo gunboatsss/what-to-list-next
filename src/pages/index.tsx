@@ -1,5 +1,11 @@
 import Head from 'next/head'
 import Table from './Table'
+import dynamic from 'next/dynamic'
+
+const Header = dynamic(
+  import('./Header'),
+  { ssr: false }
+)
 
 export default function Home() {
   return (
@@ -10,8 +16,10 @@ export default function Home() {
         <meta name='description' content='Look at asset to listed on Synthetix Perps' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       <Table />
       <p>Powered by Coingecko</p>
     </>
   )
 }
+

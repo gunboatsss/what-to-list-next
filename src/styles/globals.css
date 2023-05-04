@@ -7,13 +7,14 @@ table {
   text-align: center;
 }
 th {
-  padding: 0 5px;
+  padding: 5px 10px;
 }
 td {
+  padding: 0 10px;
   border: 1px solid;
   border-spacing: 0;
 }
-p {
+p, h1, h2 {
   text-align: center;
   margin: auto;
 }
