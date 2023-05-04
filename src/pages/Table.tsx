@@ -6,7 +6,7 @@ export default function Table() {
             <thead>
                 <tr>
                     <th></th>
-                    <th></th>
+                    <th>Symbol</th>
                     <th>Asset</th>
                     <th>Market Cap</th>
                     <th>Volume</th>
