@@ -44,11 +44,11 @@ export default function Table() {
         getTopCoin();
     }, []);
     function sortByMarketCap() {
-        const sorted = [...Data].sort((a,b) => b.market_cap - a.market_cap);
+        const sorted = [...Data ?? []].sort((a,b) => b.market_cap - a.market_cap);
         setData(sorted);
     }
     function sortByVolume() {
-        const sorted = [...Data].sort((a,b) => b.total_volume - a.total_volume);
+        const sorted = [...Data ?? []].sort((a,b) => b.total_volume - a.total_volume);
         setData(sorted);
     }
     return (
