@@ -7,7 +7,7 @@ export default function Header() {
             How Many Assets On Synthetix Perps? {isLoading ? `Loading` : data && data.length}
         </h1>
         <h2>
-            What's next?
+            What&apos;s next?
         </h2>
         </>
     )
