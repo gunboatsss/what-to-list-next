@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <>
         <h1>
-            How Many Assets On Synthetix Perps? {isLoading ? 'Loading' : data && data.length}
+            How Many Assets On Synthetix Perps? {isLoading ? `Loading` : data && data.length}
         </h1>
         <h2>
             What's next?
