@@ -67,9 +67,7 @@ export default function Table() {
                 {Data && Data.filter(
                     (coin) => {
                         if (stablecoin.includes(coin.symbol)) return false; //stablecoin
-                        if (coin.symbol.includes('eth') && coin.symbol.length > 3) return false; // staked eth
                         if (coin.symbol.includes('btc') && coin.symbol.length > 3) return false; // wrapped btc
-                        if (coin.symbol.startsWith('c')) return false; // compound token
                         return true;
                     }
                 ).map((coin) => <Column key={coin.id} coin={coin} listStatus={listOrNot(coin.symbol)} />)}
