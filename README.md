@@ -1,4 +1,4 @@
-A website for showing how many assets has Synthetix Perps listed, sorted by volume/market cap.
+A website for showing how many assets has Synthetix Perps listed, sorted by volume/market cap. Deployed on Vercel at https://what-to-list-next.vercel.app/
 
 # Running
 
