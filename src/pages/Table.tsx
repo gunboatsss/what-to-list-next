@@ -20,7 +20,7 @@ export default function Table() {
                     ethers.utils.toUtf8String(market.asset).replace(/\0|s/g, '').toLowerCase()
             )
     });
-    const stablecoin = ['usdc', 'usdt', 'susd', 'dai', 'frax', 'lusd', 'busd', 'tusd', 'alusd', 'usdd', 'usdp', 'gusd'];
+    const stablecoin = ['susd']; // usdt is one of the market now
     let forex = new Map<string, string>();
     function genForex(assets: Array<string>, type: string) {
         assets.forEach((asset) => forex.set(asset, type));
