@@ -27,6 +27,7 @@ export default function Table() {
     };
     genForex(['xaut', 'paxg'], 'xau');
     genForex(['eurs', 'euroc', 'ageur', 'eurt'], 'eur')
+    genForex(['ethdydx'], 'dydx') // fuck you stop renaming symbol
     function listOrNot(symbol: string) {
         if (symbol.includes('snx')) return '⛔';
         else if (forex.has(symbol)) return '✅*';

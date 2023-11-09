@@ -9,6 +9,9 @@ export default function Header() {
         <h2>
             What&apos;s next?
         </h2>
+        <h2>
+            Trade on those ASSETS on KWENTA <a href="https://kwenta.eth.limo/?ref=gunboats">CLICK HERE FOR 5% BONUS</a>
+        </h2>
         </>
     )
 }
